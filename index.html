@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería Estilo</title>
+    <!-- Incluir Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white py-4">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3">BARBERIA CUERVO'S</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#servicios" class="nav-link text-white">Servicios</a></li>
+                    <li class="nav-item"><a href="#galeria" class="nav-link text-white">Galería</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link text-white">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección de bienvenida -->
+    <section id="bienvenida" class="text-center text-white py-5" style="background-image: url('img/cuervos.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <h2 class="display-4">Transforma tu look con nosotros</h2>
+            
+        </div>
+    </section>
+    
+    <section class="text-center py-5">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+            <p class="lead">Reserva tu cita y luce increíble</p>
+            <!-- Enlace al número de WhatsApp con el mensaje -->
+            <a href="https://wa.me/59172775401?text=%C2%A1Hola%21%20Me%20interesa%20reservar%20una%20cita%20en%20Peluquer%C3%ADa%20CUERVO'S." target="_blank">
+                <button class="btn btn-warning btn-lg" id="alertButton">¡Reserva Ahora!</button>
+            </a>
+            
+        </div>
+    </section>
+   
+    
+    
+
+    <!-- Sección de servicios -->
+    <section id="servicios" class="bg-dark text-center text-white py-5">
+        <div class="container">
+            <h2 class="text-warning mb-4">Servicios</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h3 class="card-title">Corte de Cabello</h3>
+                            <p class="card-text">Desde 15 Bs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h3 class="card-title">Tintes y Mechas</h3>
+                            <p class="card-text">Desde 40 Bs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card bg-secondary text-white">
+                        <div class="card-body">
+                            <h3 class="card-title">Peinados Especiales</h3>
+                            <p class="card-text">Desde 25 Bs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de galería -->
+    <section id="galeria" class="bg-dark text-center text-white py-5">
+        <div class="container">
+            <h2 class="text-warning mb-4">Galería</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <img src="img/1.jpg" class="img-fluid rounded border border-warning" alt="Corte de cabello">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/2.jpg" class="img-fluid rounded border border-warning" alt="Mechas">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/3.jpg" class="img-fluid rounded border border-warning" alt="Peinado especial">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="img/4.png" class="img-fluid rounded border border-warning" alt="Peinado especial">
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Ubicación con Google Maps -->
+<section id="location" class="container py-5">
+    <h2>Visítanos</h2>
+    <p>Nos encontramos en la zona sur de la ciudad, listos para ofrecerte el mejor servicio.</p>
+    <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d1596.4071011048482!2d-66.12469825948705!3d-17.471285364225125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e0!4m3!3m2!1d-17.4712528!2d-66.1238181!4m3!3m2!1d-17.4712694!2d-66.1238195!5e1!3m2!1ses!2sbo!4v1734500156887!5m2!1ses!2sbo" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+
+    <p>Para obtener direcciones desde tu ubicación, haz clic en el siguiente enlace:</p>
+    <a href="https://www.google.com/maps/dir/?api=1&destination=-17.471285364225125,-66.12469825948705" target="_blank" class="btn btn-warning">
+        Obtener Direccion
+    </a>
+</section>
+
+
+
+<!-- Testimonios -->
+<section id="reviews" class="container py-5">
+    <h2>Lo que dicen nuestros clientes</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                    <p class="card-text">"Un lugar increíble para relajarse y salir con un look renovado. El servicio es de primera."</p>
+                    <h5 class="card-title">PELUSAS</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                    <p class="card-text">"Un lugar donde se puede escuchar musica y echarle unas cheves."</p>
+                    <h5 class="card-title">JHONNY PEREZ.</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card bg-dark text-light">
+                <div class="card-body">
+                    <p class="card-text">"Se puede echar chisme"</p>
+                    <h5 class="card-title">NALDO</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="bg-secondary text-white py-5">
+        <div class="container">
+            <h2 class="text-warning mb-4">Contáctanos</h2>
+            <p class="mb-4">¡Conéctate con nosotros a través de nuestras redes sociales!</p>
+    
+            <!-- Enlace a WhatsApp -->
+            <div class="mb-3">
+                <a href="https://wa.me/59172775401?text=%C2%A1Hola%21%20Quiero%20reservar%20una%20cita%20en%20Peluquer%C3%ADa%20CUERVO'S" target="_blank" class="btn btn-success btn-lg btn-block">
+                    <i class="fab fa-whatsapp"></i> Contáctanos por WhatsApp
+                </a>
+            </div>
+           
+            
+    
+            <!-- Enlace a Facebook -->
+            <div class="mb-3">
+                <a href="https://www.facebook.com/batos.silvestreurey" target="_blank" class="btn btn-primary btn-lg btn-block">
+                    <i class="fab fa-facebook"></i> Visítanos en Facebook
+                </a>
+                
+            </div>
+    
+            <!-- Enlace a TikTok -->
+            <div class="mb-3">
+                <a href="https://www.tiktok.com/@vladimir.facturit?_t=ZM-8sK6gDY1REz&_r=1" target="_blank" class="btn btn-dark btn-lg btn-block">
+                    <i class="fab fa-tiktok"></i> Síguenos en TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Barberia CUERVO'S ESTYLE - Todos los derechos reservados</p>
+    </footer>
+
+    
+
+
+</body>
+</html>
+

@@ -1,0 +1,183 @@
+/* Definir variables de colores */
+:root {
+    --color-principal: #e76f51; /* Rojo suave */
+    --color-secundario: #f4a261; /* Naranja suave */
+    --color-fondo-dark: #222222; /* Fondo oscuro */
+    --color-fondo-light: #333333; /* Fondo más claro */
+}
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-fondo-dark);
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: var(--color-fondo-light);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+
+.nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--color-secundario); /* Cambia al color naranja suave */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    text-shadow: 0 0 8px rgba(244, 162, 97, 0.8); /* Agrega un resplandor */
+}
+
+
+
+#bienvenida {
+    background-color: var(--color-fondo-dark);
+    color: var(--color-secundario);
+    padding: 60px 20px;
+    text-align: center;
+    background-image: url('img/cuervos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    display: flex;  /* Agregar display flex */
+    flex-direction: column;  /* Para que los elementos se apilen en columna */
+    justify-content: center;  /* Centra los elementos verticalmente */
+    align-items: center;  /* Centra los elementos horizontalmente */
+}
+
+#bienvenida::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4); /* Fondo semitransparente para dar contraste */
+    z-index: 1; /* Coloca la capa encima de la imagen pero debajo del texto */
+}
+
+#bienvenida .container {
+    position: relative;
+    z-index: 2; /* Asegura que el texto y el contenido esté encima de la capa semitransparente */
+}
+
+
+
+#bienvenida h2 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Agregar sombra para mayor legibilidad */
+}
+
+#bienvenida .lead, #bienvenida button {
+    margin: 10px 0; /* Agregar margen entre los elementos */
+}
+
+
+
+/* Sección de servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: var(--color-fondo-dark);
+}
+
+@media (max-width: 767px) {
+    #servicios h2 {
+        font-size: 1.8rem;
+    }
+
+    .card-body {
+        padding: 1.5rem; /* Menos padding en dispositivos pequeños */
+    }
+}
+
+/* Galería */
+#galeria {
+    padding: 40px 20px;
+    background-color: var(--color-fondo-dark);
+}
+
+#galeria img {
+    border-radius: 8px;
+    border: 3px solid var(--color-principal); /* Reducir el borde en dispositivos pequeños */
+}
+
+@media (max-width: 767px) {
+    #galeria img {
+        max-width: 100%; /* Asegurarse de que las imágenes no se desborden */
+        height: auto;
+    }
+}
+
+
+/* Sección de contacto */
+#contacto {
+    background-color: var(--color-fondo-light);
+}
+
+#contactForm .form-control {
+    background-color: var(--color-fondo-dark);
+    color: white;
+    border: 1px solid var(--color-principal);
+    border-radius: 5px;
+}
+
+#contactForm button {
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+#contactForm .form-label {
+    font-size: 1.2rem; /* Aumentar tamaño de las etiquetas */
+}
+
+@media (max-width: 767px) {
+    #contactForm .form-label {
+        font-size: 1rem;
+    }
+
+    #contactForm button {
+        width: 100%; /* Asegurar que el botón ocupe todo el ancho en dispositivos pequeños */
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: var(--color-fondo-light);
+    color: white;
+    padding: 15px 0;
+}
+
+footer p {
+    font-size: 1rem; /* Reducir tamaño de texto en el footer */
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Estilo base para los botones */
+button, .btn {
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo al pasar el mouse */
+button:hover, .btn:hover {
+    background-color: var(--color-secundario); /* Cambia el color de fondo */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 4px 15px rgba(250, 17, 0, 0.5); /* Agrega un efecto de sombra */
+}
+
+
+
